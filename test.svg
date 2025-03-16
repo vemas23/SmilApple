@@ -1,0 +1,26 @@
+<svg width="100%" height="100vh">
+  <circle class="chaos" cx="50" cy="50" r="10" fill="blue" />
+</svg>
+
+<style>
+  @keyframes chaosX {
+    0%   { cx: 50px; }
+    25%  { cx: 150px; }
+    50%  { cx: 80px; }
+    75%  { cx: 200px; }
+    100% { cx: 50px; }
+  }
+
+  @keyframes chaosY {
+    0%   { cy: 50px; }
+    25%  { cy: 120px; }
+    50%  { cy: 180px; }
+    75%  { cy: 60px; }
+    100% { cy: 50px; }
+  }
+
+  .chaos {
+    animation: chaosX 2s infinite ease-in-out alternate, 
+               chaosY 2s infinite ease-in-out alternate;
+  }
+</style>
